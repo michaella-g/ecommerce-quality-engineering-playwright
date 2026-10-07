@@ -4,6 +4,7 @@ import { ProductPage } from '../pages/ProductPage';
 import { CartPage } from '../pages/CartPage';
 import { CheckoutPage } from '../pages/CheckoutPage';
 import { PRODUCTS } from '../utils/helpers';
+import { waitForChallengeToClear } from '../utils/cloudflare';
 
 type Fixtures = {
   searchPage: SearchPage;
@@ -15,6 +16,16 @@ type Fixtures = {
 };
 
 export const test = base.extend<Fixtures>({
+  // Every page.goto waits for any Cloudflare challenge to clear before the test continues
+  page: async ({ page }, use) => {
+    const goto = page.goto.bind(page);
+    page.goto = (async (url, options) => {
+      const response = await goto(url, options);
+      await waitForChallengeToClear(page);
+      return response;
+    }) as typeof page.goto;
+    await use(page);
+  },
   searchPage: async ({ page }, use) => use(new SearchPage(page)),
   productPage: async ({ page }, use) => use(new ProductPage(page)),
   cartPage: async ({ page }, use) => use(new CartPage(page)),

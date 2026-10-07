@@ -1,0 +1,4002 @@
+<testsuites id="" name="" tests="78" failures="23" skipped="0" errors="53" time="265.989065">
+<testsuite name="accessibility.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="chromium" tests="7" failures="6" skipped="0" time="52.205" errors="1">
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations" classname="accessibility.spec.ts" time="5.735">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [chromium] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations" classname="accessibility.spec.ts" time="5.741">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [chromium] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations" classname="accessibility.spec.ts" time="5.664">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [chromium] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations" classname="accessibility.spec.ts" time="5.722">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [chromium] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations" classname="accessibility.spec.ts" time="2.615">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [chromium] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone" classname="accessibility.spec.ts" time="15.885">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.focus: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › accessibility.spec.ts:33:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone 
+
+    TimeoutError: locator.focus: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+      34 |     await page.goto('/');
+      35 |     const search = page.locator('#small-searchterms');
+    > 36 |     await search.focus();
+         |                  ^
+      37 |     await expect(search).toBeFocused();
+      38 |     await page.keyboard.type('MacBook');
+      39 |     await page.keyboard.press('Enter');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:36:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names" classname="accessibility.spec.ts" time="10.843">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › accessibility.spec.ts:43:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Email')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel('Email') with timeout 10000ms
+      - waiting for getByLabel('Email')
+
+
+      43 |   test('login form fields have accessible names', async ({ page }) => {
+      44 |     await page.goto('/login');
+    > 45 |     await expect(page.getByLabel('Email')).toBeVisible();
+         |                                            ^
+      46 |     await expect(page.getByLabel('Password')).toBeVisible();
+      47 |     await expect(page.getByRole('button', { name: 'Log in' })).toBeVisible();
+      48 |   });
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:45:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="cart.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="chromium" tests="5" failures="0" skipped="0" time="79.116" errors="5">
+<testcase name="Basket › add to basket updates header counter @smoke" classname="cart.spec.ts" time="15.863">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/video.webm]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › cart.spec.ts:7:7 › Basket › add to basket updates header counter @smoke ─────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/cart.spec.ts:9:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › item appears in the cart with the right quantity" classname="cart.spec.ts" time="15.796">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/video.webm]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › cart.spec.ts:15:7 › Basket › item appears in the cart with the right quantity ───────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › changing quantity recalculates the line total" classname="cart.spec.ts" time="15.874">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-chromium/video.webm]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › cart.spec.ts:20:7 › Basket › changing quantity recalculates the line total ──────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › setting quantity to 0 removes the item" classname="cart.spec.ts" time="15.787">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-chromium/video.webm]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › cart.spec.ts:29:7 › Basket › setting quantity to 0 removes the item ─────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › removing an item empties the basket" classname="cart.spec.ts" time="15.796">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-chromium/video.webm]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › cart.spec.ts:34:7 › Basket › removing an item empties the basket ────────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-removing-an-item-empties-the-basket-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="checkout.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.046" errors="1">
+<testcase name="Checkout › guest can complete an order end to end @smoke" classname="checkout.spec.ts" time="16.046">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/video.webm]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › checkout.spec.ts:5:7 › Checkout › guest can complete an order end to end @smoke ─────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="search-and-select.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="chromium" tests="5" failures="0" skipped="0" time="78.963" errors="5">
+<testcase name="Product search › finds a product by keyword @smoke" classname="search-and-select.spec.ts" time="15.821">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › search-and-select.spec.ts:7:7 › Product search › finds a product by keyword @smoke ──
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:8:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › every result matches a multi-result term" classname="search-and-select.spec.ts" time="15.807">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › search-and-select.spec.ts:12:7 › Product search › every result matches a multi-result term 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:13:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › shows a friendly message when nothing matches" classname="search-and-select.spec.ts" time="15.799">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › search-and-select.spec.ts:19:7 › Product search › shows a friendly message when nothing matches 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:20:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › opens the product page from search results @smoke" classname="search-and-select.spec.ts" time="15.782">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-chromium/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › search-and-select.spec.ts:26:7 › Product selection › opens the product page from search results @smoke 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:28:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › category page can be sorted by price, low to high" classname="search-and-select.spec.ts" time="15.754">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.selectOption: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › search-and-select.spec.ts:35:7 › Product selection › category page can be sorted by price, low to high 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#products-orderby')
+
+
+      35 |   test('category page can be sorted by price, low to high', async ({ page }) => {
+      36 |     await page.goto('/notebooks');
+    > 37 |     await page.locator('#products-orderby').selectOption({ label: 'Price: Low to High' });
+         |                                             ^
+      38 |     await expect(page).toHaveURL(/orderby=10/);
+      39 |
+      40 |     const prices = (await page.locator('.product-item .actual-price').allInnerTexts()).map(parseMoney);
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:37:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="validation.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="chromium" tests="6" failures="1" skipped="0" time="90.367" errors="5">
+<testcase name="Validation and error scenarios › search rejects terms shorter than 3 characters" classname="validation.spec.ts" time="15.714">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › validation.spec.ts:5:7 › Validation and error scenarios › search rejects terms shorter than 3 characters 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:7:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › empty basket shows the empty message and no checkout button" classname="validation.spec.ts" time="10.591">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [chromium] › validation.spec.ts:11:7 › Validation and error scenarios › empty basket shows the empty message and no checkout button 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.order-summary-content')
+    Expected substring: "Your Shopping Cart is empty"
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" locator('.order-summary-content') with timeout 10000ms
+      - waiting for locator('.order-summary-content')
+
+
+      11 |   test('empty basket shows the empty message and no checkout button', async ({ cartPage }) => {
+      12 |     await cartPage.goto();
+    > 13 |     await expect(cartPage.emptyMessage).toContainText('Your Shopping Cart is empty');
+         |                                         ^
+      14 |     await expect(cartPage.checkoutButton).toHaveCount(0);
+      15 |   });
+      16 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:13:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-chromium/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Validation and error scenarios › checkout is blocked until terms of service are accepted" classname="validation.spec.ts" time="15.699">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › validation.spec.ts:17:7 › Validation and error scenarios › checkout is blocked until terms of service are accepted 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form flags all required fields" classname="validation.spec.ts" time="16.01">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › validation.spec.ts:23:7 › Validation and error scenarios › billing form flags all required fields 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form rejects a malformed email" classname="validation.spec.ts" time="16.147">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › validation.spec.ts:31:7 › Validation and error scenarios › billing form rejects a malformed email 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-chromium/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › login with bad credentials shows an error" classname="validation.spec.ts" time="16.206">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-chromium/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-chromium/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › validation.spec.ts:39:7 › Validation and error scenarios › login with bad credentials shows an error 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#Email')
+
+
+      39 |   test('login with bad credentials shows an error', async ({ page }) => {
+      40 |     await page.goto('/login');
+    > 41 |     await page.locator('#Email').fill('nobody@example.com');
+         |                                  ^
+      42 |     await page.locator('#Password').fill('wrong-password');
+      43 |     await page.getByRole('button', { name: 'Log in' }).click();
+      44 |     await expect(page.locator('.message-error')).toContainText('Login was unsuccessful');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:41:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-chromium/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="firefox" tests="7" failures="6" skipped="0" time="36.525" errors="1">
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations" classname="accessibility.spec.ts" time="1.406">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [firefox] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations" classname="accessibility.spec.ts" time="1.329">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [firefox] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations" classname="accessibility.spec.ts" time="2.342">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [firefox] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations" classname="accessibility.spec.ts" time="1.92">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [firefox] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations" classname="accessibility.spec.ts" time="1.908">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [firefox] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone" classname="accessibility.spec.ts" time="16.277">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.focus: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › accessibility.spec.ts:33:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone 
+
+    TimeoutError: locator.focus: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+      34 |     await page.goto('/');
+      35 |     const search = page.locator('#small-searchterms');
+    > 36 |     await search.focus();
+         |                  ^
+      37 |     await expect(search).toBeFocused();
+      38 |     await page.keyboard.type('MacBook');
+      39 |     await page.keyboard.press('Enter');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:36:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names" classname="accessibility.spec.ts" time="11.343">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [firefox] › accessibility.spec.ts:43:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Email')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel('Email') with timeout 10000ms
+      - waiting for getByLabel('Email')
+
+
+      43 |   test('login form fields have accessible names', async ({ page }) => {
+      44 |     await page.goto('/login');
+    > 45 |     await expect(page.getByLabel('Email')).toBeVisible();
+         |                                            ^
+      46 |     await expect(page.getByLabel('Password')).toBeVisible();
+      47 |     await expect(page.getByRole('button', { name: 'Log in' })).toBeVisible();
+      48 |   });
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:45:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="cart.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="firefox" tests="5" failures="0" skipped="0" time="80.714" errors="5">
+<testcase name="Basket › add to basket updates header counter @smoke" classname="cart.spec.ts" time="16.534">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/video.webm]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › cart.spec.ts:7:7 › Basket › add to basket updates header counter @smoke ──────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/cart.spec.ts:9:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › item appears in the cart with the right quantity" classname="cart.spec.ts" time="16.324">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/video.webm]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › cart.spec.ts:15:7 › Basket › item appears in the cart with the right quantity ────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › changing quantity recalculates the line total" classname="cart.spec.ts" time="15.939">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-firefox/video.webm]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › cart.spec.ts:20:7 › Basket › changing quantity recalculates the line total ───────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › setting quantity to 0 removes the item" classname="cart.spec.ts" time="15.936">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-firefox/video.webm]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › cart.spec.ts:29:7 › Basket › setting quantity to 0 removes the item ──────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › removing an item empties the basket" classname="cart.spec.ts" time="15.981">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-firefox/video.webm]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › cart.spec.ts:34:7 › Basket › removing an item empties the basket ─────────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-removing-an-item-empties-the-basket-firefox/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="checkout.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="firefox" tests="1" failures="0" skipped="0" time="16.011" errors="1">
+<testcase name="Checkout › guest can complete an order end to end @smoke" classname="checkout.spec.ts" time="16.011">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/video.webm]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › checkout.spec.ts:5:7 › Checkout › guest can complete an order end to end @smoke ──────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-firefox/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="search-and-select.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="firefox" tests="5" failures="0" skipped="0" time="79.941" errors="5">
+<testcase name="Product search › finds a product by keyword @smoke" classname="search-and-select.spec.ts" time="15.998">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › search-and-select.spec.ts:7:7 › Product search › finds a product by keyword @smoke ───
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:8:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › every result matches a multi-result term" classname="search-and-select.spec.ts" time="15.952">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › search-and-select.spec.ts:12:7 › Product search › every result matches a multi-result term 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:13:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › shows a friendly message when nothing matches" classname="search-and-select.spec.ts" time="15.969">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › search-and-select.spec.ts:19:7 › Product search › shows a friendly message when nothing matches 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:20:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › opens the product page from search results @smoke" classname="search-and-select.spec.ts" time="16.049">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-firefox/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › search-and-select.spec.ts:26:7 › Product selection › opens the product page from search results @smoke 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:28:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › category page can be sorted by price, low to high" classname="search-and-select.spec.ts" time="15.973">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.selectOption: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › search-and-select.spec.ts:35:7 › Product selection › category page can be sorted by price, low to high 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#products-orderby')
+
+
+      35 |   test('category page can be sorted by price, low to high', async ({ page }) => {
+      36 |     await page.goto('/notebooks');
+    > 37 |     await page.locator('#products-orderby').selectOption({ label: 'Price: Low to High' });
+         |                                             ^
+      38 |     await expect(page).toHaveURL(/orderby=10/);
+      39 |
+      40 |     const prices = (await page.locator('.product-item .actual-price').allInnerTexts()).map(parseMoney);
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:37:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-firefox/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="validation.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="firefox" tests="6" failures="1" skipped="0" time="91.472" errors="5">
+<testcase name="Validation and error scenarios › search rejects terms shorter than 3 characters" classname="validation.spec.ts" time="15.995">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › validation.spec.ts:5:7 › Validation and error scenarios › search rejects terms shorter than 3 characters 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:7:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › empty basket shows the empty message and no checkout button" classname="validation.spec.ts" time="10.948">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [firefox] › validation.spec.ts:11:7 › Validation and error scenarios › empty basket shows the empty message and no checkout button 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.order-summary-content')
+    Expected substring: "Your Shopping Cart is empty"
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" locator('.order-summary-content') with timeout 10000ms
+      - waiting for locator('.order-summary-content')
+
+
+      11 |   test('empty basket shows the empty message and no checkout button', async ({ cartPage }) => {
+      12 |     await cartPage.goto();
+    > 13 |     await expect(cartPage.emptyMessage).toContainText('Your Shopping Cart is empty');
+         |                                         ^
+      14 |     await expect(cartPage.checkoutButton).toHaveCount(0);
+      15 |   });
+      16 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:13:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-firefox/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Validation and error scenarios › checkout is blocked until terms of service are accepted" classname="validation.spec.ts" time="16.045">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › validation.spec.ts:17:7 › Validation and error scenarios › checkout is blocked until terms of service are accepted 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form flags all required fields" classname="validation.spec.ts" time="16.077">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › validation.spec.ts:23:7 › Validation and error scenarios › billing form flags all required fields 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form rejects a malformed email" classname="validation.spec.ts" time="16.153">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › validation.spec.ts:31:7 › Validation and error scenarios › billing form rejects a malformed email 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-firefox/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › login with bad credentials shows an error" classname="validation.spec.ts" time="16.254">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-firefox/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-firefox/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [firefox] › validation.spec.ts:39:7 › Validation and error scenarios › login with bad credentials shows an error 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#Email')
+
+
+      39 |   test('login with bad credentials shows an error', async ({ page }) => {
+      40 |     await page.goto('/login');
+    > 41 |     await page.locator('#Email').fill('nobody@example.com');
+         |                                  ^
+      42 |     await page.locator('#Password').fill('wrong-password');
+      43 |     await page.getByRole('button', { name: 'Log in' }).click();
+      44 |     await expect(page.locator('.message-error')).toContainText('Login was unsuccessful');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:41:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-firefox/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="webkit" tests="7" failures="6" skipped="0" time="32.96" errors="1">
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations" classname="accessibility.spec.ts" time="1.477">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [webkit] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Home page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a0785--has-no-critical-violations-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations" classname="accessibility.spec.ts" time="0.979">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [webkit] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Category page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-bfe44--has-no-critical-violations-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations" classname="accessibility.spec.ts" time="1.072">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [webkit] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Product page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-8730b--has-no-critical-violations-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations" classname="accessibility.spec.ts" time="1.206">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [webkit] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Cart page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-828e8--has-no-critical-violations-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations" classname="accessibility.spec.ts" time="1.1">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/video-1.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="meta-refresh: Delayed refresh under 20 hours must not be used" type="expect.toEqual">
+<![CDATA[  [webkit] › accessibility.spec.ts:14:9 › Accessibility (axe-core, WCAG 2.1 A/AA) › Login page has no critical violations 
+
+    Error: meta-refresh: Delayed refresh under 20 hours must not be used
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 44
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+    +     "help": "Delayed refresh under 20 hours must not be used",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/meta-refresh?application=playwright",
+    +     "id": "meta-refresh",
+    +     "impact": "critical",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "redirectDelay": 360,
+    +             },
+    +             "id": "meta-refresh",
+    +             "impact": "critical",
+    +             "message": "<meta> tag forces timed refresh of page (less than 20 hours)",
+    +             "relatedNodes": Array [],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   <meta> tag forces timed refresh of page (less than 20 hours)",
+    +         "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+    +         "impact": "critical",
+    +         "none": Array [],
+    +         "target": Array [
+    +           "meta[http-equiv=\"refresh\"]",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.time-and-media",
+    +       "wcag2a",
+    +       "wcag221",
+    +       "TTv5",
+    +       "TT8.a",
+    +       "EN-301-549",
+    +       "EN-9.2.2.1",
+    +       "RGAAv4",
+    +       "RGAA-13.1.2",
+    +     ],
+    +   },
+    + ]
+
+      27 |       // tighten to serious + critical once the baseline is clean.
+      28 |       const blocking = results.violations.filter((v) => v.impact === 'critical');
+    > 29 |       expect(blocking, blocking.map((v) => `${v.id}: ${v.help}`).join('\n')).toEqual([]);
+         |                                                                              ^
+      30 |     });
+      31 |   }
+      32 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:29:78
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-0f53c--has-no-critical-violations-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone" classname="accessibility.spec.ts" time="16.075">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.focus: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › accessibility.spec.ts:33:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › search is usable by keyboard alone 
+
+    TimeoutError: locator.focus: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+      34 |     await page.goto('/');
+      35 |     const search = page.locator('#small-searchterms');
+    > 36 |     await search.focus();
+         |                  ^
+      37 |     await expect(search).toBeFocused();
+      38 |     await page.keyboard.type('MacBook');
+      39 |     await page.keyboard.press('Enter');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:36:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-fe6ad-is-usable-by-keyboard-alone-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names" classname="accessibility.spec.ts" time="11.051">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [webkit] › accessibility.spec.ts:43:7 › Accessibility (axe-core, WCAG 2.1 A/AA) › login form fields have accessible names 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Email')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel('Email') with timeout 10000ms
+      - waiting for getByLabel('Email')
+
+
+      43 |   test('login form fields have accessible names', async ({ page }) => {
+      44 |     await page.goto('/login');
+    > 45 |     await expect(page.getByLabel('Email')).toBeVisible();
+         |                                            ^
+      46 |     await expect(page.getByLabel('Password')).toBeVisible();
+      47 |     await expect(page.getByRole('button', { name: 'Log in' })).toBeVisible();
+      48 |   });
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/accessibility.spec.ts:45:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-a2c81-ields-have-accessible-names-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="cart.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="webkit" tests="5" failures="0" skipped="0" time="80.369" errors="5">
+<testcase name="Basket › add to basket updates header counter @smoke" classname="cart.spec.ts" time="16.104">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/video.webm]]
+
+[[ATTACHMENT|cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › cart.spec.ts:7:7 › Basket › add to basket updates header counter @smoke ───────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/cart.spec.ts:9:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-add-to-basket-updates-header-counter-smoke-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › item appears in the cart with the right quantity" classname="cart.spec.ts" time="16.085">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/video.webm]]
+
+[[ATTACHMENT|cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › cart.spec.ts:15:7 › Basket › item appears in the cart with the right quantity ─────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-item-appears-in-the-cart-with-the-right-quantity-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › changing quantity recalculates the line total" classname="cart.spec.ts" time="15.998">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-webkit/video.webm]]
+
+[[ATTACHMENT|cart-Basket-changing-quantity-recalculates-the-line-total-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › cart.spec.ts:20:7 › Basket › changing quantity recalculates the line total ────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-changing-quantity-recalculates-the-line-total-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › setting quantity to 0 removes the item" classname="cart.spec.ts" time="16.074">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-webkit/video.webm]]
+
+[[ATTACHMENT|cart-Basket-setting-quantity-to-0-removes-the-item-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › cart.spec.ts:29:7 › Basket › setting quantity to 0 removes the item ───────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-setting-quantity-to-0-removes-the-item-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Basket › removing an item empties the basket" classname="cart.spec.ts" time="16.108">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-webkit/video.webm]]
+
+[[ATTACHMENT|cart-Basket-removing-an-item-empties-the-basket-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › cart.spec.ts:34:7 › Basket › removing an item empties the basket ──────────────────────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/cart-Basket-removing-an-item-empties-the-basket-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/cart-Basket-removing-an-item-empties-the-basket-webkit/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="checkout.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="webkit" tests="1" failures="0" skipped="0" time="16.049" errors="1">
+<testcase name="Checkout › guest can complete an order end to end @smoke" classname="checkout.spec.ts" time="16.049">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/video.webm]]
+
+[[ATTACHMENT|checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › checkout.spec.ts:5:7 › Checkout › guest can complete an order end to end @smoke ───────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/checkout-Checkout-guest-ca-5f62d-e-an-order-end-to-end-smoke-webkit/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="search-and-select.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="webkit" tests="5" failures="0" skipped="0" time="80.177" errors="5">
+<testcase name="Product search › finds a product by keyword @smoke" classname="search-and-select.spec.ts" time="16.046">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › search-and-select.spec.ts:7:7 › Product search › finds a product by keyword @smoke ────
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:8:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--aeda2--a-product-by-keyword-smoke-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › every result matches a multi-result term" classname="search-and-select.spec.ts" time="16.049">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › search-and-select.spec.ts:12:7 › Product search › every result matches a multi-result term 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:13:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--d25a6-matches-a-multi-result-term-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product search › shows a friendly message when nothing matches" classname="search-and-select.spec.ts" time="16.049">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › search-and-select.spec.ts:19:7 › Product search › shows a friendly message when nothing matches 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:20:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--12cc1-essage-when-nothing-matches-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › opens the product page from search results @smoke" classname="search-and-select.spec.ts" time="16">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-webkit/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--bf699-e-from-search-results-smoke-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › search-and-select.spec.ts:26:7 › Product selection › opens the product page from search results @smoke 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:28:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--bf699-e-from-search-results-smoke-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Product selection › category page can be sorted by price, low to high" classname="search-and-select.spec.ts" time="16.033">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/video.webm]]
+
+[[ATTACHMENT|search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.selectOption: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › search-and-select.spec.ts:35:7 › Product selection › category page can be sorted by price, low to high 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#products-orderby')
+
+
+      35 |   test('category page can be sorted by price, low to high', async ({ page }) => {
+      36 |     await page.goto('/notebooks');
+    > 37 |     await page.locator('#products-orderby').selectOption({ label: 'Price: Low to High' });
+         |                                             ^
+      38 |     await expect(page).toHaveURL(/orderby=10/);
+      39 |
+      40 |     const prices = (await page.locator('.product-item .actual-price').allInnerTexts()).map(parseMoney);
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/search-and-select.spec.ts:37:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/search-and-select-Product--6cbff-sorted-by-price-low-to-high-webkit/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="validation.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="webkit" tests="6" failures="1" skipped="0" time="91.472" errors="5">
+<testcase name="Validation and error scenarios › search rejects terms shorter than 3 characters" classname="validation.spec.ts" time="16.086">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › validation.spec.ts:5:7 › Validation and error scenarios › search rejects terms shorter than 3 characters 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:7:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--eb514-s-shorter-than-3-characters-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › empty basket shows the empty message and no checkout button" classname="validation.spec.ts" time="10.951">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [webkit] › validation.spec.ts:11:7 › Validation and error scenarios › empty basket shows the empty message and no checkout button 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.order-summary-content')
+    Expected substring: "Your Shopping Cart is empty"
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" locator('.order-summary-content') with timeout 10000ms
+      - waiting for locator('.order-summary-content')
+
+
+      11 |   test('empty basket shows the empty message and no checkout button', async ({ cartPage }) => {
+      12 |     await cartPage.goto();
+    > 13 |     await expect(cartPage.emptyMessage).toContainText('Your Shopping Cart is empty');
+         |                                         ^
+      14 |     await expect(cartPage.checkoutButton).toHaveCount(0);
+      15 |   });
+      16 |
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:13:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--d53b9-sage-and-no-checkout-button-webkit/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Validation and error scenarios › checkout is blocked until terms of service are accepted" classname="validation.spec.ts" time="16.064">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › validation.spec.ts:17:7 › Validation and error scenarios › checkout is blocked until terms of service are accepted 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--27e71-rms-of-service-are-accepted-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form flags all required fields" classname="validation.spec.ts" time="16.157">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--627a2-m-flags-all-required-fields-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › validation.spec.ts:23:7 › Validation and error scenarios › billing form flags all required fields 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--627a2-m-flags-all-required-fields-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › billing form rejects a malformed email" classname="validation.spec.ts" time="16.095">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › validation.spec.ts:31:7 › Validation and error scenarios › billing form rejects a malformed email 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#small-searchterms')
+
+
+       at ../pages/SearchPage.ts:21
+
+      19 |
+      20 |   async search(term: string) {
+    > 21 |     await this.box.fill(term);
+         |                    ^
+      22 |     await this.box.press('Enter');
+      23 |     await this.page.waitForURL(/\/search\?q=/);
+      24 |   }
+        at SearchPage.search (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:21:20)
+        at Object.cartWithMacbook (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/fixtures.ts:25:22)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--38409-m-rejects-a-malformed-email-webkit/error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Validation and error scenarios › login with bad credentials shows an error" classname="validation.spec.ts" time="16.119">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-webkit/video.webm]]
+
+[[ATTACHMENT|validation-Validation-and--83c03--credentials-shows-an-error-webkit/error-context.md]]
+]]>
+</system-out>
+<error message="locator.fill: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [webkit] › validation.spec.ts:39:7 › Validation and error scenarios › login with bad credentials shows an error 
+
+    TimeoutError: locator.fill: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('#Email')
+
+
+      39 |   test('login with bad credentials shows an error', async ({ page }) => {
+      40 |     await page.goto('/login');
+    > 41 |     await page.locator('#Email').fill('nobody@example.com');
+         |                                  ^
+      42 |     await page.locator('#Password').fill('wrong-password');
+      43 |     await page.getByRole('button', { name: 'Log in' }).click();
+      44 |     await expect(page.locator('.message-error')).toContainText('Login was unsuccessful');
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/validation.spec.ts:41:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/validation-Validation-and--83c03--credentials-shows-an-error-webkit/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="mobile.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="mobile-chrome" tests="3" failures="1" skipped="0" time="27.187" errors="1">
+<testcase name="Mobile viewport › page does not scroll horizontally" classname="mobile.spec.ts" time="0.58">
+</testcase>
+<testcase name="Mobile viewport › navigation collapses behind the menu toggle" classname="mobile.spec.ts" time="10.623">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [mobile-chrome] › mobile.spec.ts:14:7 › Mobile viewport › navigation collapses behind the menu toggle 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.menu-toggle')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.menu-toggle') with timeout 10000ms
+      - waiting for locator('.menu-toggle')
+
+
+      15 |     await page.goto('/');
+      16 |     const toggle = page.locator('.menu-toggle');
+    > 17 |     await expect(toggle).toBeVisible();
+         |                          ^
+      18 |     await expect(page.locator('.top-menu.mobile')).toBeHidden();
+      19 |     await toggle.click();
+      20 |     await expect(page.locator('.top-menu.mobile')).toBeVisible();
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/mobile.spec.ts:17:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-chrome/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Mobile viewport › search, add to basket and view cart on a phone @smoke" classname="mobile.spec.ts" time="15.984">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/error-context.md]]
+]]>
+</system-out>
+<error message="locator.click: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [mobile-chrome] › mobile.spec.ts:23:7 › Mobile viewport › search, add to basket and view cart on a phone @smoke 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.product-item').locator('.product-title a').filter({ hasText: 'Apple MacBook Pro 13-inch' }).first()
+
+
+       at ../pages/SearchPage.ts:31
+
+      29 |
+      30 |   async open(name: string) {
+    > 31 |     await this.titles().filter({ hasText: name }).first().click();
+         |                                                           ^
+      32 |     await expect(this.page.locator('.product-name h1')).toContainText(name);
+      33 |   }
+      34 | }
+        at SearchPage.open (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:31:59)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/mobile.spec.ts:36:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-chrome/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="mobile.spec.ts" timestamp="2026-10-07T12:58:54.493Z" hostname="mobile-safari" tests="3" failures="1" skipped="0" time="27.603" errors="1">
+<testcase name="Mobile viewport › page does not scroll horizontally" classname="mobile.spec.ts" time="0.761">
+</testcase>
+<testcase name="Mobile viewport › navigation collapses behind the menu toggle" classname="mobile.spec.ts" time="10.719">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [mobile-safari] › mobile.spec.ts:14:7 › Mobile viewport › navigation collapses behind the menu toggle 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.menu-toggle')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.menu-toggle') with timeout 10000ms
+      - waiting for locator('.menu-toggle')
+
+
+      15 |     await page.goto('/');
+      16 |     const toggle = page.locator('.menu-toggle');
+    > 17 |     await expect(toggle).toBeVisible();
+         |                          ^
+      18 |     await expect(page.locator('.top-menu.mobile')).toBeHidden();
+      19 |     await toggle.click();
+      20 |     await expect(page.locator('.top-menu.mobile')).toBeVisible();
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/mobile.spec.ts:17:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/mobile-Mobile-viewport-nav-80704-pses-behind-the-menu-toggle-mobile-safari/error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Mobile viewport › search, add to basket and view cart on a phone @smoke" classname="mobile.spec.ts" time="16.123">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/error-context.md]]
+]]>
+</system-out>
+<error message="locator.click: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [mobile-safari] › mobile.spec.ts:23:7 › Mobile viewport › search, add to basket and view cart on a phone @smoke 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.product-item').locator('.product-title a').filter({ hasText: 'Apple MacBook Pro 13-inch' }).first()
+
+
+       at ../pages/SearchPage.ts:31
+
+      29 |
+      30 |   async open(name: string) {
+    > 31 |     await this.titles().filter({ hasText: name }).first().click();
+         |                                                           ^
+      32 |     await expect(this.page.locator('.product-name h1')).toContainText(name);
+      33 |   }
+      34 | }
+        at SearchPage.open (/Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/pages/SearchPage.ts:31:59)
+        at /Users/michaellagreen/Documents/GitHub/ecommerce-quality-engineering-playwright/tests/mobile.spec.ts:36:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/mobile-Mobile-viewport-sea-d0b6b--view-cart-on-a-phone-smoke-mobile-safari/error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>
