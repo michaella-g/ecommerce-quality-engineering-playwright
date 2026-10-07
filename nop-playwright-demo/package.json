@@ -1,0 +1,20 @@
+{
+  "name": "nop-playwright-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:mobile": "playwright test --project=mobile-chrome --project=mobile-safari",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:a11y": "playwright test tests/accessibility.spec.ts",
+    "test:headed": "playwright test --headed --project=chromium",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
